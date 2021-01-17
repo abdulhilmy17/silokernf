@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>SILOKERNF</title>
+    <link rel="icon" href="img/logo/logo-sttnf.jpg">
+  </head> 
+  <body>
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Sistem Informasi Lowongan Kerja NF - SILOKERNF</h1>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container col-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Lowongan Baru</a>
+            <a class="nav-item nav-link" href="#">Isi Loker</a>
+            <a class="nav-item nav-link" href="#">Daftar Mitra</a>
+            <a class="nav-item nav-link" href="#">Berita</a>
+          </div>
+        </div>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <a class="btn btn-warning tombol" href="index.html">Logout</a>
+        </div>
+        </nav>
+      </div>
+      <div class="col-md-12 d-flex justify-content-end">
+        <nav>
+            <ol class="breadcrumb bgcolor">
+                <li class="breadcrumb-item">
+                    <a href="admin.html">Admin</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="kelola_lowongan.html">Kelola Lowongan Kerja</a>
+              </li>
+                <li class="breadcrumb-item active">
+                    Form Edit Lowongan Kerja 
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Konten -->
+    <div class="container">
+        <h4 class="alert alert-primary text-center ">Edit Form Mitra Kerja</h4>
+        <div class="container mt-5">
+          <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Perusahaan :</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Nama perusahaan">
+              </div>
+            </div>
+    
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Bidang Usaha :</label>
+              <div class="col-sm-3">
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected="">Pilih bidang usaha...</option>
+                  <option value="1">E-Commerce</option>
+                  <option value="2">Tekstil</option>
+                  <option value="3">Startup</option>
+                  <option value="4">Manufaktur</option>
+                </select>
+              </div>
+            </div>
+    
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Deskripsi Lowongan :</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="Textarea" placeholder="Tuliskan deskripsi lowongan" required></textarea>
+              </div>
+            </div>
+    
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Kualifikasi Lowongan:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="Textarea" placeholder="Tuliskan kualifikasi perusahaan" required></textarea>
+              </div>
+            </div>
+    
+              <div class="form-group row">
+                <label for="Kategori" class="col-sm-2 col-form-label">Kategori Lowongan :</label>
+                <div class="col-sm-10">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Programmer</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Network & Infrastructure</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Analyst</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Data Science</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Staff IT</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Operator Produksi</label>
+                  </div>
+                </div>
+              </div>
+    
+            <div class="form-group row">
+                <label for="tanggal" class="col-sm-2 col-form-label">Tanggal Dateline :</label>
+                <div class="col-sm-3">
+                  <input type="date" name="" class="form-control">
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Kontak Person :</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" placeholder="Nomor aktif">
+                </div>
+              </div>
+    
+            <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label">Email :</label>
+              <div class="col-sm-10">
+                <input type="email" name="" class="form-control" placeholder="Email aktif">
+              </div>
+            </div>
+    
+            <div class="form-group row mt-5 justify-content-end">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-success">Reset</button>
+              </div>
+            </div>
+    
+          </form>
+        </div>
+      </div>
+  <!-- Akhir Konten -->
+
+  <!-- Footer -->
+  <div class="col-md-12 footer">
+    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Kelompok 7 TI06 STT Nurul FIkri</p>
+</div>
+<!-- Akhir Footer -->
+<script src="script.js"></script>
+</body>
+</html>

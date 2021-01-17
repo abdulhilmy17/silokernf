@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>SILOKERNF</title>
+    <link rel="icon" href="img/logo/logo-sttnf.jpg">
+  </head> 
+  <body>
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Sistem Informasi Lowongan Kerja NF - SILOKERNF</h1>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container col-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Lowongan Baru</a>
+            <a class="nav-item nav-link" href="#">Isi Loker</a>
+            <a class="nav-item nav-link" href="#">Daftar Mitra</a>
+            <a class="nav-item nav-link" href="#">Berita</a>
+          </div>
+        </div>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <a class="btn btn-warning tombol" href="index.html">Logout</a>
+        </div>
+        </nav>
+      </div>
+      <!-- Small Navbar -->
+      <div class="col-md-12 d-flex justify-content-end">
+        <nav>
+            <ol class="breadcrumb bgcolor">
+                <li class="breadcrumb-item">
+                    <a href="admin.html">Admin</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="kelola_mitra.html">Kelola Mitra Kerja</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    Form Edit Mitra Kerja
+                </li>
+            </ol>
+        </nav>
+    </div>
+    <!-- Akhir Small Navbar -->
+
+    <!-- Konten -->
+    <div class="container">
+      <h4 class="alert alert-primary text-center ">Edit Form Mitra Kerja</h4>
+      <div class="container mt-5">
+        <form>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Perusahaan :</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="nama perusahaan" placeholder="Nama perusahaan">
+            </div>
+          </div>
+  
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Bidang Usaha :</label>
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                <option selected="">Pilih bidang usaha...</option>
+                <option value="1">E-Commerce</option>
+                <option value="2">Tekstil</option>
+                <option value="3">Startup</option>
+                <option value="4">Manufaktur</option>
+              </select>
+            </div>
+          </div>
+  
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Mitra :</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Nama mitra kerja">
+              </div>
+            </div>
+  
+          <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label">Email :</label>
+            <div class="col-sm-10">
+              <input type="email" name="" class="form-control" placeholder="Email aktif">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">No. Telp Mitra :</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" placeholder="Nomor aktif">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Alamat Web :</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control"  placeholder="Alamat web mitra kerja">
+            </div>
+          </div>
+  
+          <div class="form-group row mt-5 justify-content-end">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-success">Reset</button>
+            </div>
+          </div>
+  
+        </form>
+      </div>
+    </div>
+<!-- Akhir Konten -->
+  
+  <!-- Footer -->
+  <div class="col-md-12 footer">
+    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Kelompok 7 TI06 STT Nurul FIkri</p>
+</div>
+
+<script src="script.js"></script>
+<!-- Akhir Footer -->
+</body>
+</html>

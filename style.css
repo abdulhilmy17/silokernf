@@ -1,0 +1,171 @@
+/* Jumbotron */
+.jumbotron {
+
+    background-image:url(img/gambar\ 2.jpg);
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    position: relative;
+
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top,rgba(36, 120, 230, 0.7), rgba(0,0,0,0) );
+    position: absolute;
+    bottom: 0;
+
+}
+
+.display-4 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.8);
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+/* navbar */
+.navbar {
+    position: absolute;
+    bottom: 0;
+    right:  0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    text-align: left;
+}
+.nav-link {
+    color: black !important;
+}
+.tombol {
+    margin-left: 5px;
+}
+
+/* content */
+
+.content {
+    margin-bottom: 50px;
+    margin-left: 25px;
+}
+.content p {
+
+    font-size: large;
+    text-align: left;
+    font-size: 15px;
+}
+.content h1{
+    font-size: 30px;
+}
+.berita {
+    background-color: rgb(225, 235, 233);
+}
+.berita a {
+    text-decoration: underline;
+}
+
+/* image description */
+.deskripsi h4 {
+    margin: 7px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.deskripsi img {
+    height: 175px;
+    margin: 10px;
+}
+.deskripsi span {
+    font-weight:600;
+    font-size: large;
+    font-size: 16px;
+}
+.deskripsi h3{
+    margin-left: 20px;
+    color:rgb(59, 126, 250);
+    font-size: 20px;
+}
+
+.deskripsi p {
+    margin-left: 20px;
+}
+
+/* footer */
+.footer {
+    margin-top: 100px;
+}
+.footer p{
+    color: #acacac;
+    font-size: 21px;
+    text-align: center;
+}
+
+.bgcolor {
+    background-color: transparent;
+}
+
+.table thead{
+    color: black;
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+}
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+        color: #fff !important;
+     }
+
+     .navbar {
+         background-color: transparent;
+     }
+     .tombol {
+        margin-left: 10px;
+    }
+
+
+    .nav-link:hover::after {
+     content: '';
+     display: block;
+     border-bottom:3px solid rgb(130, 241, 199);
+     width: 50%;
+     margin: auto;
+     padding-bottom: 5px;
+     margin-bottom: -8px;
+     }
+
+     .deskripsi h4 {
+        font-size: 25px;
+    }
+    .content p {
+        font-size: 20px;
+    }
+    .content h1{
+        font-size: 40px;
+    }
+    .deskripsi h3 {
+        font-size: 25px;
+    }
+    .dua {
+        border-top: rgb(95, 175, 240) 3px solid;
+    }
+    .formfendaftaran {
+        margin-top: 50px;
+    }
+
+     
+}
