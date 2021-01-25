@@ -47,7 +47,7 @@
     color: black !important;
 }
 .tombol {
-    margin-left: 5px;
+    margin-left: auto;
 }
 
 /* content */
@@ -121,6 +121,123 @@
 tr {
     text-align: center;
 }
+
+
+.testimonial {
+    margin-top: 100px;
+}
+
+.testimonial h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.testimonial figure img {
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.testimonial figure h5 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1c2c5d;
+    margin-left: 8px;
+}
+
+.testimonial figure p {
+    font-size: 14px;
+    color: #acacac;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.blogin {
+    height: 600px;
+    background-color:white;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.login {
+    background-color: #fff;
+    width: 350px;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.login h2 {
+    margin: 0 0 20px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.login .input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.login .input-group input {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.login .input-group button {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.login .input-group span {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    padding: 0px;
+    text-transform: capitalize;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.login .input-group input:focus ~ span,
+.login .input-group input:valid ~ span {
+    top: -12px;
+    left: 20px;
+    font-size: 12px;
+    background-color: white;
+    padding: 2px 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.login .input-group button[type="submit"]{
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.login .input-group button[type="submit"]:hover {
+    width: 100%;
+    background-color: rgba(255,0,0,0.5);
+    color: #fff;
+}
 /* DEKSTOP VERSION */
 @media (min-width: 992px) {
 
@@ -136,7 +253,6 @@ tr {
      .tombol {
         margin-left: 10px;
     }
-
 
     .nav-link:hover::after {
      content: '';
@@ -167,5 +283,8 @@ tr {
         margin-top: 50px;
     }
 
-     
+    /* Testimonial */
+    .testimonial h5 {
+        font-size: 32px;
+    }
 }
